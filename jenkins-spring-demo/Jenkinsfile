@@ -9,17 +9,17 @@ pipeline {
     stages {
 		stage('Build Maven') {
 			steps {
-                 
+                dir('jenkins-spring-demo') {
                     sh 'chmod +x mvnw'
                     sh './mvnw clean package -DskipTests'
-                
+                }
             }
 		}
         stage('Docker Build') {
             steps {
-					
+                dir('jenkins-spring-demo') {
                     sh "docker build -t ${DOCKER_IMAGE} ."
-                
+                }
             }
         }
         stage('Deploy'){
