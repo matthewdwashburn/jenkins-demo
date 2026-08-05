@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>jenkins-spring-demo</artifactId>
+	<artifactId>jenkins-spring-demo-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>jenkins-spring-demo</name>
+	<name>jenkins-spring-demo-app</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -39,6 +39,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webmvc-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency> 
+			<groupId>org.springframework.boot</groupId> 
+			<artifactId>spring-boot-starter-test</artifactId> 
+			<scope>test</scope> 
 		</dependency>
 	</dependencies>
 
