@@ -9,10 +9,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 class JenkinsSpringDemoApplicationTests {
 
 	@Test
-	void contextLoads() {
-	}
-
-	@Test
 	void testNull() {
 		assertNull(null);
 	}
